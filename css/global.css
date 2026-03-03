@@ -142,6 +142,97 @@ nav ul li:hover a {
     opacity: 1;
 }
 
+/* --- Navigation on Mobile (Hamburger Nav) --- */
+
+/* --- Burger Button Styling --- */
+.menu-toggle {
+    display: none; /* Auf Desktop verstecken */
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    gap: 6px;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* --- Mobile View (bis 768px) --- */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: flex-end; /* Schiebt den Inhalt (den Burger) nach rechts */
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex; /* Burger auf Mobile anzeigen */
+        justify-content: center; /* Zentriert Bars vertikal */
+        align-items: center;     /* Zentriert Bars horizontal */
+
+        /* Kreis-Form & Größe */
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1001;
+
+        /* Dein Liquid Glass Effekt */
+        background: color-mix(in srgb, var(--blue), transparent 65%);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul {
+        /* Menü verstecken und positionieren */
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 3.5em; /* Abstand zum Header */
+        left: 0;
+        width: 100%;
+
+        /* Effekt: Es fährt von oben ein und ist unsichtbar */
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none; /* Verhindert Klicks im versteckten Zustand */
+
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Wenn das Menü aktiv ist */
+    nav ul.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    nav li {
+        border-right: none !important; /* Horizontale Linien entfernen */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    /* X-Animation für den Burger-Button */
+    #mobile-menu.is-active .bar:nth-child(2) { opacity: 0; }
+    #mobile-menu.is-active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+    #mobile-menu.is-active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+}
+
 .card {
     position: relative;
     /* 1. Transparenter Hintergrund */
