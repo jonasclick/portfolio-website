@@ -20,14 +20,7 @@
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
+    <?php include 'header.part.html'; ?>
 </header>
 
 <main>
@@ -53,36 +46,14 @@
         <!-- Call to Action -->
         <h1>Funkkontakt herstellen</h1>
         <p>Flaschenpost war gestern. Schreib mir heute und lass uns ins Gespräch kommen.</p>
-        <a href="../html/contact.html" class="primary-button">
+        <a href="contact.php" class="primary-button">
             Kontakt aufnehmen<span class="material-symbols-outlined">chevron_right</span>
         </a>
     </section>
 </main>
 
 <footer>
-    <!-- Contact Information -->
-    <div class="footer-title">
-        <h3>Jonas Vetsch</h3>
-        <h4>Lernender Informatiker EFZ (Way-Up)</h4>
-        <h4>Fachrichtung Applikationsentwicklung</h4>
-    </div>
-    <p>ICT-Campus der Schweizerischen Post</p>
-    <p>Engehaldenstrasse 26, 3030 Bern</p>
-
-    <div class="tel-mail">
-        <p>jonas.vetsch@post.ch</p>
-        <p>079 890 88 66</p>
-    </div>
-    <br>
-    <h4>Icons von FREEPIK</h4>
-
-
-    <!-- Impressum, Datenschutz -->
-    <div class="footer-nav">
-        <a href="privacy.html">Datenschutz</a>
-        <p>|</p>
-        <a href="imprint.html">Impressum</a>
-    </div>
+    <?php include 'footer.part.html'; ?>
 </footer>
 
 </body>

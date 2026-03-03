@@ -32,16 +32,7 @@
     <p class="elevator-pitch">Lass uns die Segel setzen und Kurs nehmen auf die nächste Reise. Ready for Boarding?</p>
 
     <!-- Menu -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/projects.html">Projekte</a></li>
-                <li><a href="html/about.html">About</a></li>
-                <li><a href="html/contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'html/header.part.html'; ?>
 
     <main>
         <!-- Featured Projects -->
@@ -93,36 +84,14 @@
             <!-- Call to Action -->
             <h1>Klar zum Entern?</h1>
             <p>Lass uns ins Gespräch kommen und gemeinsam Kurs aufnehmen auf die Post von morgen.</p>
-            <a href="html/contact.html" class="primary-button">
+            <a href="html/contact.php" class="primary-button">
                 Kontakt aufnehmen<span class="material-symbols-outlined">chevron_right</span>
             </a>
         </section>
     </main>
 
     <footer>
-        <!-- Contact Information -->
-        <div class="footer-title">
-            <h3>Jonas Vetsch</h3>
-            <h4>Lernender Informatiker EFZ (Way-Up)</h4>
-            <h4>Fachrichtung Applikationsentwicklung</h4>
-        </div>
-        <p>ICT-Campus der Schweizerischen Post</p>
-        <p>Engehaldenstrasse 26, 3030 Bern</p>
-
-        <div class="tel-mail">
-            <p>jonas.vetsch@post.ch</p>
-            <p>079 890 88 66</p>
-        </div>
-        <br>
-        <h4>Icons von FREEPIK</h4>
-
-
-        <!-- Impressum, Datenschutz -->
-        <div class="footer-nav">
-            <a href="html/privacy.html">Datenschutz</a>
-            <p>|</p>
-            <a href="html/imprint.html">Impressum</a>
-        </div>
+        <?php include 'html/footer.part.html'; ?>
     </footer>
 
 </body>
