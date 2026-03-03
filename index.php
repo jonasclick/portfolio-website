@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="project-image" src="img/projects/quizelle.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                    <img class="project-image" src="img/projects/quizelle.png" alt="Struktur Diagramm meines Hangman-Spiels">
                     <img class="technology-image" src="img/projects/technology-images/react.png" alt="Logo von Python">
                     <div class="project-description">
                         <h3>Quizelle</h3>
