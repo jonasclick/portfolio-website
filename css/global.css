@@ -171,6 +171,8 @@ nav ul li:hover a {
 
     object-fit: cover;
     object-position: top;
+
+    position: relative;
 }
 
 .card .technology-image {
@@ -197,6 +199,19 @@ nav ul li:hover a {
 
 .card p {
     margin: 0 1rem 0.4rem 0.7rem
+}
+
+.card .project-image-copyright {
+    text-align: right;
+
+    position: absolute;
+    bottom: 2px;
+    right: 15px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+
+    background: var(--nightgreen);
+
 }
 
 .card a {
