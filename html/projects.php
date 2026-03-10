@@ -32,6 +32,7 @@
         <p>Nachfolgend findest du eine Auswahl an Projekten, die ich auf meinem bisherigen Weg als binärer Matrose bereits umsetzen durfte. Dazu gehören Projekte im Rahmen meiner Basisausbildung bei der Post (ICT-Campus), der Berufsfachschule (gibb) sowie persönliche Projekte.</p>
     </section>
 
+    <!-- Projects Overview as Table -->
     <section>
         <h2>Projektübersicht</h2>
         <table class="project-overview-table">
@@ -176,6 +177,45 @@
                     <p>Native Mobile App (iOS) für längere Fokusphasen bei der Arbeit. Entwickelt mit der Kanban-Methode, geschrieben in Swift mit SwitUI. Firebase NoSQL-Datenbank.</p>
                     <a href="https://github.com/jonasclick/FocusShare" target="_blank">Projekt auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section>
+        <h2>Bildergalerie meiner Projekte</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/img/projects/hangman.jpg" alt="Hangman Spiel">
+                <div class="gallery-overlay"><span>Hangman</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/telematikprojekt.png" alt="Netzinfrastruktur Projekt">
+                <div class="gallery-overlay"><span>Netzinfrastruktur</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/swissaerialguessr.png" alt="SwissAerialGuessr Bundeshaus">
+                <div class="gallery-overlay"><span>SwissAerialGuessr</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/skysoar.jpg" alt="SkySoar App">
+                <div class="gallery-overlay"><span>SkySoar</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/quizelle.png" alt="Quizelle App">
+                <div class="gallery-overlay"><span>Quizelle</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/focusshare.jpg" alt="FocusShare App">
+                <div class="gallery-overlay"><span>FocusShare</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/portfoliowebseite.png" alt="Portfolio Webseite">
+                <div class="gallery-overlay"><span>Portfolio Website</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="/img/projects/aerialimages.png" alt="Automatisierung Luftbilder">
+                <div class="gallery-overlay"><span>Automatisierung</span></div>
             </div>
         </div>
     </section>

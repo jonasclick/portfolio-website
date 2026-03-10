@@ -2,7 +2,7 @@ main h3 {
     margin: 0.2rem 0 0.2rem 0.7rem;
 }
 
-/* --- TABELLEN STYLING für Projektübersichtstabelle --- */
+/* --- TABELLEN STYLING für Projektübersichtstabelle (gibb-Requirement) --- */
 .project-overview-table {
     width: 100%;
     margin: 1.5rem 0;
@@ -44,4 +44,55 @@ main h3 {
 /* Letzte Linie entfernen, damit es unten bündig abschliesst */
 .project-overview-table tr:last-child td {
     border-bottom: none;
+}
+
+/* --- BILDERGALERIE (gibb-Requirement) --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 nebeneinander auf Mobile */
+    gap: 15px;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 1em;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Macht die Bilder schön quadratisch für ein sauberes Grid */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--nightgreen); /* Fallback, falls ein Bild lädt */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sorgt dafür, dass die Bilder das Quadrat ausfüllen, ohne verzerrt zu werden */
+    display: block;
+}
+
+/* Lower-Third Effekt */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%; /* Das unterste Drittel/Viertel abdunkeln */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 0.8rem;
+}
+
+.gallery-overlay span {
+    color: var(--primary-white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 nebeneinander auf Desktop */
+        gap: 20px;
+    }
 }

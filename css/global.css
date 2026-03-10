@@ -305,6 +305,10 @@ nav ul li:hover a {
 
 }
 
+.card .project-image-copyright span {
+    margin: 0 5px;
+}
+
 .card a {
     margin: 1rem 6rem 0.7rem 0.7rem;
     display: inline-block;
@@ -350,7 +354,6 @@ nav ul li:hover a {
 .material-symbols-outlined {
     vertical-align: text-bottom;
     font-variation-settings: 'wght' 400;
-    margin: 0 5px;
 }
 
 .primary-button {
@@ -446,6 +449,12 @@ footer .tel-mail {
 
     footer {
         padding: 3rem 3rem 0 3rem;
+    }
+    
+    /* Image gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 nebeneinander auf Desktop */
+        gap: 20px;
     }
 
 }
