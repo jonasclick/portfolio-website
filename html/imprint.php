@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/imprint.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/imprint.css">
 
     <title>Impressum | Jonas Vetsch</title>
 

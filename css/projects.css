@@ -1,3 +1,47 @@
 main h3 {
     margin: 0.2rem 0 0.2rem 0.7rem;
 }
+
+/* --- TABELLEN STYLING für Projektübersichtstabelle --- */
+.project-overview-table {
+    width: 100%;
+    margin: 1.5rem 0;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    /* Übernimmt Glass-Effekt */
+    background: color-mix(in srgb, var(--nightgreen), transparent 65%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1em;
+
+    /* Wichtig, damit die Ecken rund bleiben */
+    overflow: hidden;
+}
+
+.project-overview-table th,
+.project-overview-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Kopfzeile etwas abdunkeln und Textfarbe anpassen */
+.project-overview-table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    color: var(--sand);
+}
+
+/* Vertikaler Strich zwischen den zwei Spalten */
+.project-overview-table td:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: top; /* Hält den Text oben, wenn die Zelle wächst */
+}
+
+/* Letzte Linie entfernen, damit es unten bündig abschliesst */
+.project-overview-table tr:last-child td {
+    border-bottom: none;
+}

@@ -297,7 +297,7 @@ nav ul li:hover a {
 
     position: absolute;
     bottom: 2px;
-    right: 15px;
+    right: -3px;
     padding: 0.3rem 0.5rem;
     border-radius: 0.2rem;
 
@@ -348,8 +348,9 @@ nav ul li:hover a {
 }
 
 .material-symbols-outlined {
-    vertical-align: middle;
+    vertical-align: text-bottom;
     font-variation-settings: 'wght' 400;
+    margin: 0 5px;
 }
 
 .primary-button {

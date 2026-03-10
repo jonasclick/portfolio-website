@@ -1,14 +1,15 @@
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/projects.css">
 
     <!-- JavaScript -->
-    <script src="../script/global.js" defer></script>
+    <script src="/script/global.js" defer></script>
 
     <title>Projekte | Jonas Vetsch</title>
 
@@ -31,13 +32,56 @@
         <p>Nachfolgend findest du eine Auswahl an Projekten, die ich auf meinem bisherigen Weg als binärer Matrose bereits umsetzen durfte. Dazu gehören Projekte im Rahmen meiner Basisausbildung bei der Post (ICT-Campus), der Berufsfachschule (gibb) sowie persönliche Projekte.</p>
     </section>
 
+    <section>
+        <h2>Projektübersicht</h2>
+        <table class="project-overview-table">
+            <thead>
+            <tr>
+                <th>Ausbildungsbereich</th>
+                <th>Projektname</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="3"><strong>Basisausbildung (ICT-Campus)</strong></td>
+                <td>Hangman</td>
+            </tr>
+            <tr>
+                <td>Netzinfrastruktur für M. Müller GmbH</td>
+            </tr>
+            <tr>
+                <td>Portfoliowebseite</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"><strong>Berufsfachschule (gibb)</strong></td>
+                <td>Automatisierung für Reisebüros</td>
+            </tr>
+            <tr>
+                <td>SwissAerialGuessr</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><strong>Persönliche Projekte</strong></td>
+                <td>SkySoar</td>
+            </tr>
+            <tr>
+                <td>Quizelle</td>
+            </tr>
+            <tr>
+                <td>FocusShare</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
     <!-- Basisausbildung Post -->
     <section>
         <h2>Basisausbildung Post (ICT-Campus)</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/hangman.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <img class="project-image" src="/img/projects/hangman.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="/img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Hangman</h3>
                     <p>Hangman-Konsolenspiel, entwickelt mit der IPERKA-Methode, geschrieben in Python.</p>
@@ -45,7 +89,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/telematikprojekt.png" alt="Struktur Diagramm meines Hangman-Spiels">
+                <img class="project-image" src="/img/projects/telematikprojekt.png" alt="Struktur Diagramm meines Hangman-Spiels">
                 <div class="project-description">
                     <h3>Netzinfrastruktur für M. Müller GmbH</h3>
                     <p>Für ein KMU die Netzinfrastruktur geplant und umgesetzt. Router, AP, NAS, Netzwerkfreigaben und Clients konfiguriert und dokumentiert.</p>
@@ -54,13 +98,13 @@
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/portfoliowebseite.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/html5.png" alt="Logo von Python">
+                <img class="project-image" src="/img/projects/portfoliowebseite.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="/img/projects/technology-images/html5.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Portfoliowebseite</h3>
                     <p>Persönliche Portfoliowebseite zur präsentation meiner ICT-Projekte. Entwickelt nach "Mobile First", geschrieben mit HTML und CSS, Formularvalidierung mit JavaScript.</p>
                     <!-- TODO: PDF-Download / Ansicht implementieren -->
-                    <a href="../pdf/dokumentationtelematik.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="/pdf/dokumentationtelematik.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
         </div>
@@ -72,8 +116,11 @@
         <h2>Berufsfachschule (gibb)</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/aerialimages.png" alt="Luftbild von Dorf Brienz (BE)">
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <div class="project-image">
+                    <img class="project-image" src="/img/projects/aerialimages.png" alt="Luftbild von Dorf Brienz (BE)">
+                    <p class="project-image-copyright"><span class="material-symbols-outlined"> copyright </span>Swisstopo</p>
+                </div>
+                <img class="technology-image" src="/img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Automatisierung für Reisebüros</h3>
                     <p>Automatisiert Luftbilder für beliebige Adressen in der Schweiz generieren. Entwickelt mit der Kanban-Methode, geschrieben in Python. Verwendet die GeoAdmin API.</p>
@@ -83,10 +130,10 @@
 
             <div class="card">
                 <div class="project-image">
-                    <img class="project-image" src="../img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
-                    <p class="project-image-copyright">C Swisstopo</p>
+                    <img class="project-image" src="/img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
+                    <p class="project-image-copyright"><span class="material-symbols-outlined"> copyright </span>Swisstopo</p>
                 </div>
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <img class="technology-image" src="/img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>SwissAerialGuessr</h3>
                     <p>Spiel, bei dem Orte in der Schweiz anhand ihres Luftbildes erraten werden müssen. Entwickelt mit der Kanban-Methode, geschrieben in Python. Verwendet die GeoAmdmin API und eine MySQL Datenbank.</p>
@@ -102,8 +149,8 @@
         <h2>Persönliche Projekte</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/skysoar.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/appstore.png" alt="Logo des Apple App Store">
+                <img class="project-image" src="/img/projects/skysoar.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="/img/projects/technology-images/appstore.png" alt="Logo des Apple App Store">
                 <div class="project-description">
                     <h3>SkySoar</h3>
                     <p>Native Mobile App (iOS) zur Visualisierung des Trainingszustands von Piloten. Entwickelt mit der Kanban-Methode, geschrieben in Swift mit SwiftUI. Lokale Datenbank.</p>
@@ -112,8 +159,8 @@
             </div>
 
             <div class="card">
-                <img class="project-image" src="../img/projects/quizelle.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/react.png" alt="Logo von Python">
+                <img class="project-image" src="/img/projects/quizelle.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="/img/projects/technology-images/react.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Quizelle</h3>
                     <p>Ein Quiz über die Schweizerische Post, mit Auth und Leaderboard. Entwickelt mit der Kanban-Methode, geschrieben in React mit TypeScript. Firebase NoSQL-Datenbank.</p>
@@ -122,8 +169,8 @@
             </div>
 
             <div class="card">
-                <img class="project-image" src="../img/projects/focusshare.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/appstore.png" alt="Logo von Python">
+                <img class="project-image" src="/img/projects/focusshare.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="/img/projects/technology-images/appstore.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>FocusShare</h3>
                     <p>Native Mobile App (iOS) für längere Fokusphasen bei der Arbeit. Entwickelt mit der Kanban-Methode, geschrieben in Swift mit SwitUI. Firebase NoSQL-Datenbank.</p>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/about.css">
 
     <title>About | Jonas Vetsch</title>
 
@@ -28,7 +28,7 @@
     <section>
         <h1>About</h1>
         <div class="about-content">
-            <img class="profile-img" src="../img/profilepicture.png" alt="Profilbild von Jonas Vetsch">
+            <img class="profile-img" src="/img/profilepicture.png" alt="Profilbild von Jonas Vetsch">
             <p>Hallo, ich bin Jonas. Nach dem Gymnasium in Frauenfeld (TG) und Santiago de Chile
                 habe ich einige Jahre reformierte Theologie an der Universität Zürich studiert.</p>
             <p>Von diesem Studium konnte ich persönlich viel profitieren, sah mich beruflich aber

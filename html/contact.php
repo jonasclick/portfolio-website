@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../script/contact.js"></script>
+    <script src="/script/contact.js"></script>
 
     <title>Kontakt | Jonas Vetsch</title>
 
@@ -41,10 +41,10 @@
         <p>Du findest mich auf Linkedin und GitHub.</p>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/jonas-vetsch/" target="_blank">
-                <img src="../img/linkedinicon.png" alt="Linkedin Icon">
+                <img src="/img/linkedinicon.png" alt="Linkedin Icon">
             </a>
             <a href="https://github.com/jonasclick" target="_blank">
-                <img src="../img/githubiconwhite.png" alt="GitHub Icon">
+                <img src="/img/githubiconwhite.png" alt="GitHub Icon">
             </a>
         </div>
     </section>

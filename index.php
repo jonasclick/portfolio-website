@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/index.css">
 
     <title>Jonas Vetsch | Lernender Informatiker</title>
 
@@ -19,7 +19,7 @@
 <body>
     <!-- Bild und Name -->
     <div class="hero">
-        <img class="profile-img" src="img/profilepicture.png" alt="Profilbild von Jonas Vetsch">
+        <img class="profile-img" src="/img/profilepicture.png" alt="Profilbild von Jonas Vetsch">
         <div class="hero-text">
             <h1>Jonas Vetsch</h1>
             <h4>Lernender Informatiker EFZ (Way-Up)</h4>
@@ -32,7 +32,9 @@
     <p class="elevator-pitch">Lass uns die Segel setzen und Kurs nehmen auf die nächste Reise. Ready for Boarding?</p>
 
     <!-- Menu -->
-    <?php include 'html/header.part.html'; ?>
+    <header>
+    <?php include './html/header.part.html'; ?>
+    </header>
 
     <main>
         <!-- Featured Projects -->
@@ -49,7 +51,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="project-image" src="img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
+                    <div class="project-image">
+                        <img class="project-image" src="/img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
+                        <p class="project-image-copyright"><span class="material-symbols-outlined"> copyright </span>Swisstopo</p>
+                    </div>
                     <img class="technology-image" src="img/projects/technology-images/python.png" alt="Logo von Python">
                     <div class="project-description">
                         <h3>SwissAerialGuessr</h3>
@@ -84,14 +89,14 @@
             <!-- Call to Action -->
             <h1>Klar zum Entern?</h1>
             <p>Lass uns ins Gespräch kommen und gemeinsam Kurs aufnehmen auf die Post von morgen.</p>
-            <a href="html/contact.php" class="primary-button">
+            <a href="/html/contact.php" class="primary-button">
                 Kontakt aufnehmen<span class="material-symbols-outlined">chevron_right</span>
             </a>
         </section>
     </main>
 
     <footer>
-        <?php include 'html/footer.part.html'; ?>
+        <?php include './html/footer.part.html'; ?>
     </footer>
 
 </body>
