@@ -51,7 +51,7 @@
                 <td>Netzinfrastruktur für M. Müller GmbH</td>
             </tr>
             <tr>
-                <td>Portfoliowebseite</td>
+                <td> </td>
             </tr>
 
             <tr>
@@ -94,18 +94,7 @@
                 <div class="project-description">
                     <h3>Netzinfrastruktur für M. Müller GmbH</h3>
                     <p>Für ein KMU die Netzinfrastruktur geplant und umgesetzt. Router, AP, NAS, Netzwerkfreigaben und Clients konfiguriert und dokumentiert.</p>
-                    <!-- TODO: PDF-Download / Ansicht implementieren -->
-                    <a href="" target="_blank">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="project-image" src="/img/projects/portfoliowebseite.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="/img/projects/technology-images/html5.png" alt="Logo von Python">
-                <div class="project-description">
-                    <h3>Portfoliowebseite</h3>
-                    <p>Persönliche Portfoliowebseite zur präsentation meiner ICT-Projekte. Entwickelt nach "Mobile First", geschrieben mit HTML und CSS, Formularvalidierung mit JavaScript.</p>
-                    <!-- TODO: PDF-Download / Ansicht implementieren -->
-                    <a href="/pdf/dokumentationtelematik.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="/pdf/dokumentationtelematik.pdf" target="_blank">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
         </div>
@@ -208,10 +197,6 @@
             <div class="gallery-item">
                 <img src="/img/projects/focusshare.jpg" alt="FocusShare App">
                 <div class="gallery-overlay"><span>FocusShare</span></div>
-            </div>
-            <div class="gallery-item">
-                <img src="/img/projects/portfoliowebseite.png" alt="Portfolio Webseite">
-                <div class="gallery-overlay"><span>Portfolio Website</span></div>
             </div>
             <div class="gallery-item">
                 <img src="/img/projects/aerialimages.png" alt="Automatisierung Luftbilder">
