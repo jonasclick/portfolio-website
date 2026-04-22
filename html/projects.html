@@ -2,11 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <base href="../">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/projects.css">
 
     <title>Projekte | Jonas Vetsch</title>
 
@@ -19,16 +20,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="header-placeholder"></div>
+
 
 <main>
     <section>
@@ -41,48 +34,48 @@
         <h2>Basisausbildung ICT-Campus</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/portfoliowebseite.png" alt="Project Image">
-                <img class="technology-image" src="../img/projects/technology-images/spring-boot.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/aemtliplantool.png" alt="Project Image">
+                <img class="technology-image" src="img/projects/technology-images/spring-boot.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Backend: Ämtliplan Tool</h3>
                     <p>RESTful API nach OpenAPI Standards zur Verwaltung der Ämtli am ICT-Campus. Java Spring Boot, Gradle, JPA, Hibernate, JWT, SpringSecurity. MySQL Datenbank. Projekt in Arbeit...</p>
-                    <a href="../pdf/Dokumentation_FitnessTrackingApp_Jonas_Lara.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="pdf/Dokumentation_BAemtli_Aemtliplantool_ICT_Campus_Jonas.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/BA-2025-2026/JAVA_BAemtli" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/anlagendashboard_backend.png" alt="Project Image">
-                <img class="technology-image" src="../img/projects/technology-images/java.png" alt="Technology Logo">
+                <img class="project-image" src="img/projects/anlagendashboard_backend.png" alt="Project Image">
+                <img class="technology-image" src="img/projects/technology-images/java.png" alt="Technology Logo">
                 <div class="project-description">
                     <h3>Backend: Anlagendashboard</h3>
-                    <p>Challenge: Eine RESTful API nach OpenAPI Standards in Java (Vanilla!) bauen: Ohne Spring Boot, ohne JPA, ohne Hibernate. Geschrieben in Java mit Maven und JDBC. MySQL Datenbank.</p>
-                    <a href="../pdf/Dokumentation_Javaprojekt_Anlagendashboard_SimonJonas_All.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <p>Challenge: Eine RESTful API nach OpenAPI Standards in Java bauen: Aber <strong>ohne</strong> Spring Boot, ohne JPA, ohne Hibernate. Geschrieben in Java mit Maven und JDBC. MySQL Datenbank.</p>
+                    <a href="pdf/Dokumentation_Javaprojekt_Anlagendashboard_SimonJonas_All.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/BA-2025-2026/JAVA_SimonJonas_Anlagendashboard" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/bazario.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/spring-boot.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/bazario.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/spring-boot.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Scrum-Projekt "Bazario"</h3>
                     <p>Leitung eines Scrum-Teams mit 7 Entwickler*innen. Entwicklung des Online-Marktplatzes "Bazario". Fullstack-Applikation mit Spring Boot Backend inkl. Authentifizierung mit JWT.</p>
-                    <a href="../pdf/Scrum-Journal_JonasVetsch.pdf" target="_blank" rel="noopener noreferrer">Refelxion lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="pdf/Scrum-Journal_JonasVetsch.pdf" target="_blank" rel="noopener noreferrer">Refelxion lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/BA-2025-2026/PT_Bazario" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/fitness-tracking-app.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/react.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/fitness-tracking-app.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/react.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Frontend: Fitness Tracking App</h3>
-                    <p>SPA Web App zum Tracking von sportlichen Aktivitäten inkl. Kalorienberechnung. Geschrieben mit React und Next.js. Authentifizierung mit JWT.</p>
-                    <a href="../pdf/Dokumentation_FitnessTrackingApp_Jonas_Lara.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <p>SPA Web App zum Tracking von sportlichen Aktivitäten inkl. Kalorienberechnung. Geschrieben mit React, Next.js und JSON-Server als Backend. Authentifizierung und Autorisierung mit JWT und JSON-Server-Auth.</p>
+                    <a href="pdf/Dokumentation_FitnessTrackingApp_Jonas_Lara.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/BA-2025-2026/FE_Lara_Jonas_fitness_tracking" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/campus-news.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/react.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/campus-news.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/react.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Frontend: Campus News</h3>
                     <p>SPA Web App zum Teilen von Posts. Entwickelt nach Vorgaben des Frontend-üK. Geschrieben mit React und Next.js. Authentifizierung mit JWT.</p>
@@ -90,18 +83,18 @@
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/portfoliowebseite-2.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/html5.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/portfoliowebseite-2.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/html5.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Portfoliowebseite</h3>
-                    <p>Persönliche Portfoliowebseite zur präsentation meiner ICT-Projekte. Entwickelt nach "Mobile First", geschrieben mit HTML und CSS, Formularvalidierung mit JavaScript.</p>
-                    <a href="../pdf/Dokumentation_Portfoliowebseite_JonasVetsch.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <p>Persönliche Portfoliowebseite zur Präsentation meiner ICT-Projekte. Entwickelt nach "Mobile First", geschrieben mit HTML und CSS, Formularvalidierung mit JavaScript.</p>
+                    <a href="pdf/Dokumentation_Portfoliowebseite_JonasVetsch.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/jonasclick/portfolio-website" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/hangman.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/hangman.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Hangman</h3>
                     <p>Hangman-Konsolenspiel, entwickelt mit der IPERKA-Methode, geschrieben in Python.</p>
@@ -109,11 +102,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/telematikprojekt.png" alt="Struktur Diagramm meines Hangman-Spiels">
+                <img class="project-image" src="img/projects/telematikprojekt.png" alt="Struktur Diagramm meines Hangman-Spiels">
                 <div class="project-description">
                     <h3>Netzinfrastruktur für M. Müller GmbH</h3>
                     <p>Für ein KMU die Netzinfrastruktur geplant und umgesetzt. Router, AP, NAS, Netzwerkfreigaben und Clients konfiguriert und dokumentiert.</p>
-                    <a href="../pdf/Dokumentation_Telematikprojekt_Simon_Jonas.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="pdf/Dokumentation_Telematikprojekt_Simon_Jonas.pdf" target="_blank" rel="noopener noreferrer">Dokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
         </div>
@@ -125,18 +118,18 @@
         <h2>Berufsfachschule (gibb)</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/anlagendashboard.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/mysql.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/anlagendashboard.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/mysql.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Datenbank: Anlagendashboard</h3>
                     <p>MySQL Datenbank mit Java Spring Boot, Gradle, JPA, Hibernate, JWT, SpringSecurity. MySQL Datenbank.</p>
-                    <a href="../pdf/INFW2025a_01_Dokumentation_Anlagendashboard.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
+                    <a href="pdf/INFW2025a_01_Dokumentation_Anlagendashboard.pdf" target="_blank" rel="noopener noreferrer">Projektdokumentation lesen<span class="material-symbols-outlined">chevron_right</span></a>
                     <a href="https://github.com/BA-2025-2026/JAVA_BAemtli" target="_blank">Code auf GitHub ansehen<span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             </div>
             <div class="card">
-                <img class="project-image" src="../img/projects/aerialimages.png" alt="Luftbild von Dorf Brienz (BE)">
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/aerialimages.png" alt="Luftbild von Dorf Brienz (BE)">
+                <img class="technology-image" src="img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Automatisierung für Reisebüros</h3>
                     <p>Automatisiert Luftbilder für beliebige Adressen in der Schweiz herunterladen. Entwickelt mit der Kanban-Methode, geschrieben in Python. Verwendet die GeoAdmin API.</p>
@@ -146,10 +139,10 @@
 
             <div class="card">
                 <div class="project-image">
-                    <img class="project-image" src="../img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
+                    <img class="project-image" src="img/projects/swissaerialguessr.png" alt="Luftbild des Bundeshauses">
                     <p class="project-image-copyright">C Swisstopo</p>
                 </div>
-                <img class="technology-image" src="../img/projects/technology-images/python.png" alt="Logo von Python">
+                <img class="technology-image" src="img/projects/technology-images/python.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>SwissAerialGuessr</h3>
                     <p>Spiel, bei dem Orte in der Schweiz anhand ihres Luftbildes erraten werden müssen. Entwickelt mit der Kanban-Methode, geschrieben in Python. Verwendet die GeoAmdmin API und eine MySQL Datenbank.</p>
@@ -165,8 +158,8 @@
         <h2>Persönliche Projekte</h2>
         <div class="project-card-area">
             <div class="card">
-                <img class="project-image" src="../img/projects/skysoar.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/appstore.png" alt="Logo des Apple App Store">
+                <img class="project-image" src="img/projects/skysoar.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/appstore.png" alt="Logo des Apple App Store">
                 <div class="project-description">
                     <h3>SkySoar</h3>
                     <p>Native Mobile App (iOS) zur Visualisierung des Trainingszustands von Piloten. Geschrieben in Swift mit SwiftUI. Lokale Datenbank. Im AppStore veröffentlicht.</p>
@@ -175,8 +168,8 @@
             </div>
 
             <div class="card">
-                <img class="project-image" src="../img/projects/quizelle.png" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/react.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/quizelle.png" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/react.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>Quizelle</h3>
                     <p>Ein Quiz über die Schweizerische Post, mit Auth und Leaderboard. Entwickelt mit der Kanban-Methode, geschrieben in React mit TypeScript. Firebase NoSQL-Datenbank, Firebase Auth.</p>
@@ -185,8 +178,8 @@
             </div>
 
             <div class="card">
-                <img class="project-image" src="../img/projects/focusshare.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
-                <img class="technology-image" src="../img/projects/technology-images/appstore.png" alt="Logo von Python">
+                <img class="project-image" src="img/projects/focusshare.jpg" alt="Struturk Diagramm meines Hangman-Spiels">
+                <img class="technology-image" src="img/projects/technology-images/appstore.png" alt="Logo von Python">
                 <div class="project-description">
                     <h3>FocusShare</h3>
                     <p>Native Mobile App (iOS) für längere Fokusphasen bei der Arbeit. Entwickelt mit der Kanban-Methode, geschrieben in Swift mit SwitUI. Firebase NoSQL-Datenbank.</p>
@@ -201,14 +194,14 @@
         <!-- Call to Action -->
         <h1>Genug Seemansgarn gesponnen?</h1>
         <p>Schreib mir eine Nachricht und lass uns gemeinsam den Kompass ausrichten. Bereit zum Ablegen?</p>
-        <a href="../html/contact.html" class="primary-button">
+        <a href="html/contact.html" class="primary-button">
             Kontakt aufnehmen<span class="material-symbols-outlined">chevron_right</span>
         </a>
     </section>
 </main>
 
 <div id="footer-placeholder"></div>
-<script src="/script/index.js"></script>
+<script src="script/index.js"></script>
 
 </body>
 </html>
