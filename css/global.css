@@ -201,12 +201,15 @@ nav ul li:hover a {
     margin: 0 1rem 0.4rem 0.7rem
 }
 
+
 .card .project-image-copyright {
+    font-size: 0.7rem;
+    font-weight: 600;
     text-align: right;
 
     position: absolute;
     bottom: 2px;
-    right: 15px;
+    right: -7px;
     padding: 0.3rem 0.5rem;
     border-radius: 0.2rem;
 
