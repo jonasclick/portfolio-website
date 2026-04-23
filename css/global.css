@@ -144,30 +144,28 @@ nav ul li:hover a {
 
 .card {
     position: relative;
-    /* 1. Transparenter Hintergrund */
+    display: flex;
+    flex-direction: column;
+
+    /* Liquid Glass Effekt */
     background: color-mix(
             in srgb, var(--nightgreen), transparent 65%
     );
-
-    /* 2. Weichzeichner für den Hintergrund */
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* jSafari Support */
-
-    /* 3. Ein feiner weißer Rand (wirkt wie eine Lichtkante am Glas) */
+    -webkit-backdrop-filter: blur(12px); /* Safari Support */
     border: 1px solid rgba(255, 255, 255, 0.1);
-
-    /* 4. Abrunden und Schatten für die Tiefe */
     border-radius: 1em;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 
-    margin: 0.8em 0;
+    margin: 1.2em 0;
+    padding: 0 0 0.5rem 0;
 }
 
 .card .project-image {
     max-width: 100%;
     min-width: 100%;
-    height: 100px;
+    height: 130px;
 
     object-fit: cover;
     object-position: top;
@@ -194,11 +192,12 @@ nav ul li:hover a {
 }
 
 .card h3 {
+    margin-top: 0.5rem;
     margin-left: 0.7rem;
 }
 
 .card p {
-    margin: 0 1rem 0.4rem 0.7rem
+    margin: 0 1rem 1.2rem 0.7rem
 }
 
 
@@ -208,7 +207,7 @@ nav ul li:hover a {
     text-align: right;
 
     position: absolute;
-    bottom: 2px;
+    bottom: -9px;
     right: -7px;
     padding: 0.3rem 0.5rem;
     border-radius: 0.2rem;
@@ -218,17 +217,35 @@ nav ul li:hover a {
 }
 
 .card a {
-    margin: 1rem 6rem 0.7rem 0.7rem;
     display: inline-block;
     color: var(--accent-color);
     position: relative;
     font-weight: 500;
+
+    margin: 0 0.7rem 0 0.7rem;
     border: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
+    align-self: flex-start;
+}
+
+/* Nur der erste Link bekommt "auto", um alles nach unten zu drücken */
+.card a:first-of-type {
+    margin-top: auto;
+}
+
+/* Falls ein zweiter Link folgt, bekommt dieser einen kleinen festen Abstand */
+.card a + a {
+    margin-top: 0;
 }
 
 .card a:hover {
     border-bottom-color: rgba(var(--accent-color), 0.2);
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Nimmt den restlichen Platz in der Card ein */
 }
 
 /* Screenreader only (Accessibility) */
@@ -340,6 +357,14 @@ footer .tel-mail {
 
 
     /* PROJECT CARDS */
+    .card {
+        padding-bottom: 0;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
     .project-card-area {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -348,7 +373,7 @@ footer .tel-mail {
     }
 
     .project-description {
-        padding: 0.8rem;
+        padding: 0.8rem 0.4rem 0.8rem 0.4rem;
     }
 
     .card .project-image {
